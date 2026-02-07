@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-sm font-bold text-slate-500">
-          <p>© 2024 Shivani Packers and Movers. ISO 9001:2015 Certified Company.</p>
+          <p>© 2026 Shivani Packers and Movers. All Rights Reserved. ISO 9001:2015 Certified Company.</p>
           <div className="flex gap-10">
             <a href="#" className="hover:text-brand-orange transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>

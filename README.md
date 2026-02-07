@@ -1,20 +1,62 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Shivani Packers & Movers
 
-# Run and deploy your AI Studio app
+Professional packers and movers service website built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1NwnemQ8KI7T9q2E8Jvtzy_QTHLQOWrat
+- 🏠 **Home Shifting** - Expert household goods packing and relocation
+- 🏢 **Office Relocation** - Minimal downtime business moves
+- 🚗 **Car/Bike Transport** - Safe vehicle transport in closed containers
+- 📦 **Warehousing** - Secure CCTV monitored storage
+- 📦 **Packaging Services** - Premium multi-layer packing materials
+- ✈️ **International Moving** - Global relocation with customs clearance
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Lalitmehta045/shivani-packers-movers.git
+cd shivani-packers-movers
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be in the `dist` folder.
+
+## Copyright
+
+© 2026 Shivani Packers and Movers. All Rights Reserved.
+
+ISO 9001:2015 Certified Company
