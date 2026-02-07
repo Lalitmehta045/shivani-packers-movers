@@ -1,0 +1,7 @@
+{
+  "name": "Shivani Packers & Movers - Professional Redesign",
+  "description": "A high-conversion, modern, and trustworthy web platform for Shivani Packers and Movers, featuring smooth animations and professional UI/UX.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
