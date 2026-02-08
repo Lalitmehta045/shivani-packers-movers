@@ -1,5 +1,13 @@
-/* 
- * This file is referenced in index.html.
- * Tailwind CSS is loaded via CDN script in index.html, so this file 
- * can be used for custom CSS overrides if needed.
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
