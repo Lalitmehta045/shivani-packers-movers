@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
     e.preventDefault();
     const targetId = href.replace('#', '');
     const elem = document.getElementById(targetId);
-    
+
     if (elem) {
       const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
@@ -34,25 +34,24 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         top: offsetPosition,
         behavior: 'smooth'
       });
-      
+
       setIsOpen(false);
     }
   };
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
-      }`}
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#home" onClick={(e) => handleScroll(e, '#home')} className="flex items-center gap-3">
               <div className="h-16 md:h-24 w-auto min-w-[140px] flex items-center justify-start">
-                <img 
-                  src="assets/logo_shivani.png" 
-                  alt="Shivani Packers Logo" 
+                <img
+                  src="/assets/logo_shivani.png"
+                  alt="Shivani Packers Logo"
                   className="h-full w-auto object-contain drop-shadow-md"
                   decoding="async"
                   onError={(e) => {
@@ -71,15 +70,14 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className={`text-sm font-bold tracking-wide transition-colors hover:text-brand-orange ${
-                  isScrolled ? 'text-slate-700' : 'text-slate-900'
-                }`}
+                className={`text-sm font-bold tracking-wide transition-colors hover:text-brand-orange ${isScrolled ? 'text-slate-700' : 'text-slate-900'
+                  }`}
               >
                 {link.name}
               </a>
             ))}
-            <a 
-              href="tel:+919876543210" 
+            <a
+              href="tel:+919876543210"
               className="flex items-center gap-2 bg-brand-orange hover:bg-brand-blue text-white px-6 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-brand-orange/20 active:scale-95"
             >
               <Phone size={16} />
@@ -89,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-xl border ${isScrolled ? 'text-slate-900 border-slate-200' : 'text-slate-900 border-white/20'}`}
             >
@@ -120,7 +118,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 </a>
               ))}
               <div className="pt-6">
-                <a 
+                <a
                   href="tel:+919876543210"
                   className="flex items-center justify-center gap-3 w-full bg-brand-blue text-white py-5 rounded-2xl font-bold text-lg shadow-xl"
                 >

@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <div className="space-y-8">
             <div className="inline-block min-w-[160px]">
               <img
-                src="assets/logo_shivani.png"
+                src="/assets/logo_shivani.png"
                 alt="Shivani Packers Logo"
                 className="h-24 w-auto object-contain"
                 loading="lazy"
