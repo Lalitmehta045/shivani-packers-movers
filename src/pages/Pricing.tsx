@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Calculator, Truck, Home, Building2, Package, CheckCircle2, PhoneCall } from 'lucide-react';
 import SEO from '../components/SEO';
 
+
 export default function Pricing() {
   const [formData, setFormData] = useState({
     name: '',
@@ -221,7 +222,7 @@ export default function Pricing() {
                 <PhoneCall className="mx-auto mb-4 text-secondary" size={32} />
                 <h4 className="font-bold text-slate-900 mb-2">Prefer to Call?</h4>
                 <p className="text-sm text-slate-600 mb-4">Get an instant quote over the phone.</p>
-                <a href="tel:+919876543210" className="text-xl font-bold text-secondary hover:underline">+91 98765 43210</a>
+                <a href="tel:+918819017542" className="text-xl font-bold text-secondary hover:underline">+91 88190 17542</a>
               </div>
             </motion.div>
           </div>

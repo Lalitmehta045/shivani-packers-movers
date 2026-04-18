@@ -6,20 +6,21 @@ export const getLocalBusinessSchema = () => {
     "image": "https://shivanipackers.com/logo.png",
     "@id": "https://shivanipackers.com",
     "url": "https://shivanipackers.com",
-    "telephone": "+919876543210",
+    "telephone": "+918819017542",
+    "email": "shivanipackersandmovers03@gmail.com",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123, MP Nagar Zone 2, Near Board Office",
+      "streetAddress": "SHOP NO.-02, H.NO.04, Nawab Colony, Ashoka Garden",
       "addressLocality": "Bhopal",
-      "postalCode": "462011",
+      "postalCode": "462023",
       "addressRegion": "MP",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 23.2333,
-      "longitude": 77.4348
+      "latitude": 23.2394,
+      "longitude": 77.4354
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

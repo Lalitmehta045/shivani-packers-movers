@@ -117,7 +117,7 @@ export default function FAQ() {
                 Our support team is available 24/7 to help you with any queries.
               </p>
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href="tel:+919876543210" className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition-all">
+                <a href="tel:+918819017542" className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition-all">
                   Call Us Now
                 </a>
                 <a href="mailto:info@shivanipackers.com" className="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:bg-orange-600 transition-all">

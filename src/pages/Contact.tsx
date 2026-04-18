@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Send, CheckCircle2, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle2, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 
 export default function Contact() {
@@ -16,7 +16,7 @@ export default function Contact() {
     <>
       <SEO 
         title="Contact Us | Shivani Packers and Movers Bhopal"
-        description="Contact Shivani Packers and Movers in Bhopal for reliable shifting services. Call us, email us, or visit our office in MP Nagar."
+        description="Contact Shivani Packers and Movers in Bhopal for reliable shifting services. Call us, email us, or visit our office in Ashoka Garden."
       />
 
       {/* Header */}
@@ -57,8 +57,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-slate-900 mb-1">Call Us</h4>
-                    <p className="text-slate-600 mb-1">+91 98765 43210</p>
-                    <p className="text-slate-600">+91 755 123 4567</p>
+                    <p className="text-slate-600 mb-1">+91 88190 17542</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -67,8 +66,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-slate-900 mb-1">Email Us</h4>
-                    <p className="text-slate-600 mb-1">info@shivanipackers.com</p>
-                    <p className="text-slate-600">support@shivanipackers.com</p>
+                    <p className="text-slate-600 mb-1">shivanipackersandmovers03@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -78,11 +76,31 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xl font-bold text-slate-900 mb-1">Visit Office</h4>
                     <p className="text-slate-600 leading-relaxed">
-                      123, MP Nagar Zone 2, Near Board Office,<br />
-                      Bhopal, Madhya Pradesh - 462011
+                      SHOP NO.-02, H.NO.04, Nawab Colony,<br />
+                      Ashoka Garden, Bhopal, Madhya Pradesh - 462023
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* WhatsApp & Call Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <a 
+                  href="tel:+918819017542"
+                  className="flex-1 bg-primary hover:bg-blue-900 text-white px-6 py-4 rounded-2xl font-bold text-center transition-all flex items-center justify-center space-x-3 shadow-lg"
+                >
+                  <Phone size={22} />
+                  <span>Call Now</span>
+                </a>
+                <a 
+                  href={`https://wa.me/918819017542?text=${encodeURIComponent("Hi Shivani Packers & Movers, I'm interested in your shifting services. Can I get a quote?")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-2xl font-bold text-center transition-all flex items-center justify-center space-x-3 shadow-lg"
+                >
+                  <MessageCircle size={22} />
+                  <span>WhatsApp Us</span>
+                </a>
               </div>
 
               <div className="pt-8 border-t border-slate-100">
@@ -168,15 +186,26 @@ export default function Contact() {
       {/* Map Section */}
       <section className="h-[500px] w-full bg-slate-100">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.2559648943!2d77.4322!3d23.2333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42663974497f%3A0x6d2c676451e0640!2sMP%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1711111111111!5m2!1sen!2sin" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5!2d77.435!3d23.239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE0JzIwLjQiTiA3N8KwMjYnMDYuMCJF!5e0!3m2!1sen!2sin!4v1711111111111!5m2!1sen!2sin" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
           allowFullScreen={true} 
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
-          title="Shivani Packers & Movers Bhopal Office Location"
+          title="Shivani Packers & Movers - Ashoka Garden, Bhopal"
         ></iframe>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10 pb-8">
+          <a 
+            href="https://maps.app.goo.gl/5AZP5E9h4PEV9kMm8" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+          >
+            <MapPin size={20} className="mr-2" />
+            Open in Google Maps
+          </a>
+        </div>
       </section>
     </>
   );

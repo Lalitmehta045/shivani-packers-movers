@@ -69,15 +69,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="text-secondary mr-3 mt-1 shrink-0" size={18} />
-                <span className="text-sm">123, MP Nagar Zone 2, Near Board Office, Bhopal, MP - 462011</span>
+                <span className="text-sm">SHOP NO.-02, H.NO.04, Nawab Colony, Ashoka Garden, Bhopal, MP - 462023</span>
               </li>
               <li className="flex items-center">
                 <Phone className="text-secondary mr-3 shrink-0" size={18} />
-                <a href="tel:+919876543210" className="text-sm hover:text-white transition-colors">+91 98765 43210</a>
+                <a href="tel:+918819017542" className="text-sm hover:text-white transition-colors">+91 88190 17542</a>
               </li>
               <li className="flex items-center">
                 <Mail className="text-secondary mr-3 shrink-0" size={18} />
-                <a href="mailto:info@shivanipackers.com" className="text-sm hover:text-white transition-colors">info@shivanipackers.com</a>
+                <a href="mailto:shivanipackersandmovers03@gmail.com" className="text-sm hover:text-white transition-colors">shivanipackersandmovers03@gmail.com</a>
               </li>
             </ul>
           </div>

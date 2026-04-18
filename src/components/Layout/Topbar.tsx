@@ -5,13 +5,13 @@ export default function Topbar() {
     <div className="bg-primary text-white py-2 px-4 hidden md:block">
       <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
         <div className="flex items-center space-x-6">
-          <a href="tel:+919876543210" className="flex items-center hover:text-accent transition-colors">
+          <a href="tel:+918819017542" className="flex items-center hover:text-accent transition-colors">
             <Phone size={14} className="mr-2" />
-            <span>+91 98765 43210</span>
+            <span>+91 88190 17542</span>
           </a>
-          <a href="mailto:info@shivanipackers.com" className="flex items-center hover:text-accent transition-colors">
+          <a href="mailto:shivanipackersandmovers03@gmail.com" className="flex items-center hover:text-accent transition-colors">
             <Mail size={14} className="mr-2" />
-            <span>info@shivanipackers.com</span>
+            <span>shivanipackersandmovers03@gmail.com</span>
           </a>
           <div className="flex items-center">
             <MapPin size={14} className="mr-2" />

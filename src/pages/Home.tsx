@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Truck, ShieldCheck, Clock, Award, ArrowRight, Star, CheckCircle2, PhoneCall, Package, Warehouse } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import PricingCalculator from '../components/PricingCalculator';
 import { getLocalBusinessSchema } from '../utils/schema';
 
 import homeRelocationImg from '../images/home relocation.png';
@@ -133,7 +134,7 @@ export default function Home() {
 
           {/* Invisible Overlay for "Call Now" Button Bottom Right */}
           <a 
-            href="tel:+919876543210"
+            href="tel:+918819017542"
             className="absolute z-10 cursor-pointer"
             style={{
               top: '74%',
@@ -141,7 +142,7 @@ export default function Home() {
               width: '24.5%',
               height: '14%',
             }}
-            title="Call Now: +91 98765 43210"
+            title="Call Now: +91 88190 17542"
             aria-label="Call Now"
           />
         </motion.div>
@@ -210,6 +211,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pricing Calculator */}
+      <PricingCalculator />
 
       {/* Why Choose Us */}
       <section className="py-24 bg-slate-900 text-white overflow-hidden relative">
@@ -368,8 +372,8 @@ export default function Home() {
                 <Link to="/pricing" className="bg-secondary hover:bg-orange-600 text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl transition-all transform hover:scale-105">
                   Request a Quote
                 </Link>
-                <a href="tel:+919876543210" className="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center">
-                  <PhoneCall className="mr-3" size={24} /> Call: +91 98765 43210
+                <a href="tel:+918819017542" className="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center">
+                  <PhoneCall className="mr-3" size={24} /> Call: +91 88190 17542
                 </a>
               </div>
             </div>
