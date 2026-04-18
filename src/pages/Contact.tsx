@@ -5,11 +5,27 @@ import SEO from '../components/SEO';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const phoneNumber = '918819017542';
+    const whatsappMessage = `*New Inquiry from Website*%0A%0A👤 *Name:* ${formData.name}%0A📧 *Email:* ${formData.email}%0A📝 *Subject:* ${formData.subject}%0A%0A💬 *Message:*%0A${formData.message}%0A%0A-------------------%0APlease reply as soon as possible.`;
+    
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    window.open(whatsappUrl, '_blank');
+    
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    }, 5000);
   };
 
   return (
@@ -125,11 +141,11 @@ export default function Contact() {
               {submitted ? (
                 <div className="text-center py-20">
                   <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center text-green-600 mx-auto mb-6">
-                    <CheckCircle2 size={40} />
+                    <MessageCircle size={40} />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900 mb-4">Message Sent!</h3>
+                  <h3 className="text-3xl font-bold text-slate-900 mb-4">Redirected to WhatsApp!</h3>
                   <p className="text-slate-600 text-lg">
-                    We've received your message and will get back to you shortly.
+                    Your inquiry has been sent via WhatsApp. We will get back to you shortly.
                   </p>
                 </div>
               ) : (
@@ -141,6 +157,8 @@ export default function Contact() {
                       type="text" 
                       placeholder="Enter your name"
                       className="w-full px-6 py-4 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
                   </div>
                   <div className="space-y-2">
@@ -150,6 +168,8 @@ export default function Contact() {
                       type="email" 
                       placeholder="Enter your email"
                       className="w-full px-6 py-4 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
                   </div>
                   <div className="space-y-2">
@@ -159,6 +179,8 @@ export default function Contact() {
                       type="text" 
                       placeholder="How can we help?"
                       className="w-full px-6 py-4 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      value={formData.subject}
+                      onChange={(e) => setFormData({...formData, subject: e.target.value})}
                     />
                   </div>
                   <div className="space-y-2">
@@ -168,6 +190,8 @@ export default function Contact() {
                       rows={5}
                       placeholder="Your message here..."
                       className="w-full px-6 py-4 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
                     ></textarea>
                   </div>
                   <button 
